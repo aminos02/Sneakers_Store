@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const NavBar = ({setStyleWrapper}) => {
+const NavBar = ({setIndex}) => {
     return (
         <Nav>
             <NavTop >
@@ -16,11 +16,11 @@ const NavBar = ({setStyleWrapper}) => {
                     </LimitedOffer>
             </NavTop>    
             <NavBottom>
-                <MenuItem onClick={()=>{setStyleWrapper('0')}}>AIR FORCE</MenuItem>
-                <MenuItem onClick={()=>{setStyleWrapper('-100')}}>JORDAN</MenuItem>
-                <MenuItem onClick={()=>{setStyleWrapper('-200')}}>BLAZER</MenuItem>
-                <MenuItem onClick={()=>{setStyleWrapper('-300')}}>CRATER</MenuItem>
-                <MenuItem onClick={()=>{setStyleWrapper('-400')}}>HIPPIE</MenuItem>
+                <MenuItem onClick={()=>{setIndex('0')}}>AIR FORCE</MenuItem>
+                <MenuItem onClick={()=>{setIndex('1')}}>JORDAN</MenuItem>
+                <MenuItem onClick={()=>{setIndex('2')}}>BLAZER</MenuItem>
+                <MenuItem onClick={()=>{setIndex('3')}}>CRATER</MenuItem>
+                <MenuItem onClick={()=>{setIndex('4')}}>HIPPIE</MenuItem>
             </NavBottom>        
         </Nav>
     );

@@ -3,10 +3,10 @@ import React from "react";
 import styled from "styled-components";
 import { products } from "../data";
 
-const Slider = ({styleWrapper}) => {
+const Slider = ({index}) => {
   return (  
     <SliDer>
-      <SliderWrapper style={{"transform":`translateX(${styleWrapper}vw)`}}>
+      <SliderWrapper style={{"transform":`translateX(-${index}00vw)`}}>
         {products.map(({ id, title, colors,color, price }) => (
           <SliderItem key={id}>
             <img src={`images/${colors[0].img}`} alt="" />
