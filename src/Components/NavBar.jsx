@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const NavBar = ({setIndex}) => {
     return (
-        <Nav>
+        <Nav id='nav'>
             <NavTop >
                     <img src="images/sneakers.png" alt="" />
                     <Search> 
@@ -15,7 +15,7 @@ const NavBar = ({setIndex}) => {
                         Limited Offer!
                     </LimitedOffer>
             </NavTop>    
-            <NavBottom>
+            <NavBottom >
                 <MenuItem onClick={()=>{setIndex('0')}}>AIR FORCE</MenuItem>
                 <MenuItem onClick={()=>{setIndex('1')}}>JORDAN</MenuItem>
                 <MenuItem onClick={()=>{setIndex('2')}}>BLAZER</MenuItem>
@@ -30,6 +30,9 @@ const Nav=styled.nav`
     background-color: #111;
     color: white;
     padding: 20px 50px;
+    @media screen and (max-width:780px){
+        padding: 20px;
+    }
     
 `
 const NavTop=styled.div`
@@ -43,6 +46,9 @@ align-items: center;
 background-color: gray;
 padding: 10px 20px;
 border-radius: 10px;
+@media screen and (max-width:780px){
+        display: none;
+    }
 `
 const SearchInput=styled.input`
     border:none;
@@ -64,10 +70,14 @@ border-bottom: 2px solid green;
 cursor: pointer;
 `
 const NavBottom=styled.ul`
+padding: 0;
 display:flex;
 list-style: none;
 justify-content: center;
 margin-bottom: 0;
+@media screen and (max-width:780px){
+    flex-wrap: wrap;
+}
 `
 const MenuItem=styled.li`
 margin: 0 1rem;
@@ -95,6 +105,11 @@ transition: all 1s;
 &:hover{
     color: white;
 }
+@media screen and (max-width:780px){
+    margin: 20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
 `
 
 

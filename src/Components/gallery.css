@@ -1,0 +1,68 @@
+.gallery {
+  padding: 50px;
+  display: flex;
+}
+
+.galleryItem {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.galleryTitle {
+  text-align: center;
+}
+.newSeason {
+  display: flex;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsImg {
+  width: 100%;
+  height: 500px;
+}
+
+.nsTitle {
+  font-size: 40px;
+}
+
+.nsButton {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .gal-newSeason {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery {
+    display: none;
+  }
+
+  .newSeason {
+    flex-direction: column;
+  }
+  
+  .nsItem:nth-child(2) {
+    padding: 50px;
+  }
+}

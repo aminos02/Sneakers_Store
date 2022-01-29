@@ -6,6 +6,7 @@ const Product = ({ index }) => {
   const [activeSize, setActiveSize] = useState(0);
   const activeSizeStyle = { background: "black", color: "white" };
   const desactiveSizeStyle = { background: "white", color: "black" };
+  const [activePayment,setActivePayment]=useState(false);
   return (
     <div className="product" id="product">
       <img
@@ -53,31 +54,31 @@ const Product = ({ index }) => {
             44
           </div>
         </div>
-        <button className="productButton">BUY NOW!</button>
+        <button className="productButton" onClick={()=>{setActivePayment(true)}}>BUY NOW!</button>
       </div>
-      <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
+      {activePayment && (<div className="payment" >
+            <h1 className="payTitle">Personal Information</h1>
             <label>Name and Surname</label>
-            <input type="text" placeholder="John Doe" class="payInput"/>
+            <input type="text" placeholder="John Doe" className="payInput"/>
             <label>Phone Number</label>
-            <input type="text" placeholder="+1 234 5678" class="payInput"/>
+            <input type="text" placeholder="+1 234 5678" className="payInput"/>
             <label>Address</label>
-            <input type="text" placeholder="Elton St 21 22-145" class="payInput"/>
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="images/visa.png" width="40" alt="" class="cardIcon"/>
-                <img src="images/master.png" alt="" width="40" class="cardIcon"/>
+            <input type="text" placeholder="Elton St 21 22-145" className="payInput"/>
+            <h1 className="payTitle">Card Information</h1>
+            <div className="cardIcons">
+                <img src="images/visa.png" width="40" alt="" className="cardIcon"/>
+                <img src="images/master.png" alt="" width="40" className="cardIcon"/>
             </div>
-            <input type="password" class="payInput" placeholder="Card Number"/>
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm"/>
-                <input type="text" placeholder="yyyy" class="payInput sm"/>
-                <input type="text" placeholder="cvv" class="payInput sm"/>
+            <input type="password" className="payInput" placeholder="Card Number"/>
+            <div className="cardInfo">
+                <input type="text" placeholder="mm" className="payInput sm"/>
+                <input type="text" placeholder="yyyy" className="payInput sm"/>
+                <input type="text" placeholder="cvv" className="payInput sm"/>
             </div>
-            <button class="payButton">Checkout!</button>
-            <span class="close">X</span>
+            <button className="payButton" >Checkout!</button>
+            <span className="close" onClick={()=>{setActivePayment(false)}}>X</span>
         
-        </div>
+        </div>)}
     </div>
   );
 };

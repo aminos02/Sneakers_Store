@@ -35,6 +35,9 @@ const FeaturesWrapper=styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  @media screen and (max-width:780px){
+    flex-direction: column;
+}
 `
 const Feature=styled.div`
 display: flex;
