@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
             </div>
             <div class="footerRightMenu">
-                <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
+                <span class="copyright">@Azzouz Aminos. All rights reserved. 2022.</span>
             </div>
         </div>
     </footer>
