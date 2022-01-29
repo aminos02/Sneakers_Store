@@ -9,7 +9,7 @@ const NavBar = ({setIndex}) => {
                     <img src="images/sneakers.png" alt="" />
                     <Search> 
                         <SearchInput/>
-                        <img width={20} height={20}  placeholder='Search...' src='images/search.png'/>
+                        <img width={20} height={20} alt="search" placeholder='Search...' src='images/search.png'/>
                     </Search>
                     <LimitedOffer>
                         Limited Offer!

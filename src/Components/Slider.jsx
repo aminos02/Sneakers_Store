@@ -95,20 +95,5 @@ const SliderTitle = styled.h1`
   }
 `;
 
-const BuyButton = styled.button`
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  font-size: 30px;
-  font-weight: 900;
-  color: white;
-  border: 1px solid gray;
-  background-color: black;
-  z-index: 1;
-  cursor: pointer;
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-`;
+
 export default Slider;
