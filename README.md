@@ -1,3 +1,8 @@
+# Link : https://sneakers-store-aminos.netlify.app/
+
+<img src="https://github.com/aminos02/Sneakers_Store/blob/main/sneakerLargeDevice.png?raw=true">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
